@@ -82,7 +82,7 @@ echo "**************************************************************************
 #sudo rm -rf /medha_gateway/avahi-daemon.conf1 /medha_gateway/mosquitto.conf1 /medha_gateway/config
 #sudo rm -rf /medha_gateway/config_change/
 sudo chmod o+w /etc/crontab
-sudo echo "*/30 * * * * root sudo service zwave_app restart" >> /etc/crontab
+sudo echo "*/180 * * * * root sudo service zwave_app restart" >> /etc/crontab
 sudo chmod o-w /etc/crontab
 sudo rm -rf /home/debian/*
 sleep 3s
